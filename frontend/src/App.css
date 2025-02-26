@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --card-bg: #f9f9f9;
+  --button-bg: #007bff;
+  --button-hover: #0056b3;
+  --cancel-hover: #5b5b5b;
+  --cancel: #4f4f4f;
+  --edit-button-bg: #28a745;
+  --edit-button-hover: #218838;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: white;
+    --card-bg: #1e1e1e;
+    --button-bg: #1e90ff;
+    --button-hover: #007bff;
+    --cancel-hover: #3b3b3b;
+    --cancel: #4f4f4f;
+    --edit-button-bg: #34c759;
+    --edit-button-hover: #248f49;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
+
+.edit-button {
+  background-color: var(--edit-button-bg);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: var(--edit-button-hover);
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.cancel-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--cancel);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: var(--cancel-hover);
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #868686;
+  padding: 8px 10px;
+}
