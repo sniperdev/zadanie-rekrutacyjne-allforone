@@ -22,7 +22,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screend p-6">
+    <div className="flex justify-center items-center min-h-screen p-6">
       <Card className="w-full lg:w-3/4">
         <CardHeader className="flex justify-between items-center">
           <CardTitle className="text-2xl font-bold">Weather Reports</CardTitle>
